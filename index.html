@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="shopping-cart">
+        <header>
+            <h1>Shopping Site</h1>
+            <div class="shopping-cart__addCart">
+                <h2>Add to cart</h2>
+                <button onclick="openCart()" id="Cart-btn"><i class="fa fa-shopping-cart fa-3x"aria-hidden="true"></i></button>
+                <div id="count">0</div>
+            </div>
+        </header>
+        <main id="add" class="shopping-cart__collections">
+
+        </main>
+        <div id="myform">
+            <div id="product"></div>
+            <button onclick="closeForm()" id="close">Close</button>
+        </div>
+    </div>
+</body>
+<script src="JavaScript/app.js"></script>
+
+</html>

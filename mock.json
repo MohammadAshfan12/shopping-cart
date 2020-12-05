@@ -1,0 +1,57 @@
+[{
+    "id": "1",
+    "image": "Images/tshirt1.jpg",
+    "colorName": "Black",
+    "price": "400",
+    "button": "Add to cart"
+},
+{
+    "id": "2",
+    "image": "Images/tshirt2.jpg",
+    "colorName": "Green",
+    "price": "500",
+    "button": "Add to cart"
+},
+{
+    "id": "3",
+    "image": "Images/tshirt3.jpg",
+    "colorName": "Blue",
+    "price": "450",
+    "button": "Add to cart"
+},
+{
+    "id": "4",
+    "image": "Images/tshirt4.jpg",
+    "colorName": "Maroon",
+    "price": "600",
+    "button": "Add to cart"
+},
+
+{
+    "id": "5",
+    "image": "Images/tshirt5.jpg",
+    "colorName": "Orange",
+    "price": "400",
+    "button": "Add to cart"
+},
+{
+    "id": "6",
+    "image": "Images/tshirt6.jpg",
+    "colorName": "white",
+    "price": "500",
+    "button": "Add to cart"
+},
+{
+    "id": "7",
+    "image": "Images/tshirt7.jpg",
+    "colorName": "Yellow",
+    "price": "450",
+    "button": "Add to cart"
+},
+{
+    "id": "8",
+    "image": "Images/tshirt8.jpg",
+    "colorName": "Pink",
+    "price": "600",
+    "button": "Add to cart"
+}]
