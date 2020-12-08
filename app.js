@@ -2,6 +2,8 @@ let addToCart = document.querySelectorAll('.shopping-cart__collections');
 let add = document.getElementById('add');
 let cartButton = document.getElementById('Cart-btn');
 let countCart = document.getElementById('count');
+let form = '';
+
 let storedArray = []
 let count = 0;
 let myform = document.getElementById("product");
@@ -24,18 +26,23 @@ const getDetails = (id, price) => {
         cart += `
         <div class="items"><h3>Product Code - ${item.code}</h3>
           <h3>Product Price - ${item.price}</h3></div>
+          <h3>Product Price - ${item.image}</h3></div>
           `
     })
     myform.innerHTML = cart
 }
+
+// function getImage(image) {
+//     console.log(`h`)
+// }
 
 const  fetchData = async () => {
     let html = '';
     const response = await fetch('mock.json');
     let data = await response.json()
     data.forEach(item => {
-        html += `<div id="images" class="images">
-                    <img style="width: 70%;" src=${item.image}>
+        html += `<div class="images">
+                    <img style="width: 70%;" onclick="getImage(${item.image})" src=${item.image}>
                     <div class="images__info">
                         <div class="info-container">
                             <h3 id="color">color - ${item.colorName}</h3>
