@@ -31,7 +31,7 @@ const orderedProduct = (item) => {
     document.getElementById('ordered').style.display = "block";
      item.forEach(item => {
         orders +=  `<div class="orderPlaced">
-            <span>Product Name - ${item.name}</span>
+            <span>Customer Name - ${item.name}</span>
             <span>Mobile Number - ${item.mobile}</span>
             <span>Nearest City - ${item.city}</span>
             <span>Pin Code - ${item.pinCode}</span>
