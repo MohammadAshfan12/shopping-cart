@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -14,7 +17,8 @@
             <h1>Shopping Site</h1>
             <div class="shopping-cart__addCart">
                 <h2>Add to cart</h2>
-                <button onclick="openCart()" id="Cart-btn"><i class="fa fa-shopping-cart fa-3x"aria-hidden="true"></i></button>
+                <button onclick="openCart()" id="Cart-btn"><i class="fa fa-shopping-cart fa-3x"
+                        aria-hidden="true"></i></button>
                 <div id="count">0</div>
             </div>
         </header>
@@ -22,7 +26,22 @@
         </main>
         <div id="myform">
             <div id="product"></div>
-            <button onclick="closeForm()" id="close">Close</button>
+            <div class="close-btn"><button onclick="closeForm()" id="close">Close</button></div>
+        </div>
+
+
+        <div id="getImageDetails">
+            <button class='close-Image' onclick="closeDetails()">X</button>
+            <div id='product-details'></div>
+        </div>
+        <div id='buy-product'>
+
+        </div>
+
+        <div id="ordered">
+            <h1>Order Placed</h1>
+            <div id="OrderInfo"></div>
+            <button onclick="closeOrder()" class="closeBtn">X</button>
         </div>
     </div>
 </body>
